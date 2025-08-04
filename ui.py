@@ -16,9 +16,8 @@ stt = STT(modelpath="model_small")
 imagescan = ImageDescriber()
 
 
-api_key0 = "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"
-api_key1 = "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"
-openai.api_key = api_key0
+api_key = "YOUR_API_KEY"
+openai.api_key = api_key
 openai.api_base = "https://openrouter.ai/api/v1"
 
 chat_history = []
@@ -208,3 +207,4 @@ entry.bind("<Return>", on_enter)
 root.geometry("1000x180")
 root.grid_columnconfigure(1, weight=1)
 root.mainloop()
+
